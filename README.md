@@ -3,11 +3,11 @@ Laporan Resmi Praktikum I Jaringan Komputer oleh Kelompok E08
 
 ### Kelompok E08
 
-| **No** | **Nama** | **NRP** |
-| - | - | - |
-| 1. | Immanuel Maruli Tua Pardede | 5025201166 |
-| 2. | Muhammad Ismail | 5025201223 |
-| 3. | Halyusa Ard Wahyudi | 5025201088 |
+| **No** | **Nama** | **NRP** | **Kontribusi (No.)** |
+| - | - | - | - |
+| 1. | Halyusa Ard Wahyudi | 5025201088 | 1, 2, dan 7 |
+| 2. | Muhammad Ismail | 5025201223 | 3, 4, 5, dan 6 |
+| 3. | Immanuel Maruli Tua Pardede | 5025201166 | 8, 9, dan 10 |
 
 ## No. 1
 ### Soal
@@ -78,3 +78,12 @@ Kemudian, data tersebut di-save as dengan nama E08.des3.
 ### Soal
 Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di atas!
 ### Jawaban
+Berdasarkan hint pada transkrip percakapan pertama, file E08.des3 yang sudah dibuat didekripsikan menggunakan OpenSSL dengan metode des3. Lalu, outputnya disimpan dalam file dengan nama flag.txt, sesuai yang diminta pada soal no. 9. Perintah yang digunakan adalah `des3 -d -salt -in "E08.des3" -out "flag.txt"`. Akan ditanya password dekripsinya. Berdasarkan hint pada transkrip percakapan kedua dan ketiga, password yang benar adalah **nakano**, marga dari 5 kembar bersaudara pada "anime 5-toubun no Hanayome".
+
+<img src="https://github.com/immanuelmtpardede/Jarkom-Modul-1-E08-2022/blob/main/img/10.1.png" width=50%>
+
+Kita berhasil mendapatkan password rahasianya, yaitu **JaRkOm2022{8uK4N_CtF_k0k_h3h3h3}**.
+
+<img src="https://github.com/immanuelmtpardede/Jarkom-Modul-1-E08-2022/blob/main/img/10.2.png" width=50%>
+
+**Kendala:** Pada pengerjaan di hari-H praktikum, kami tidak mendapatkan jawaban yang benar. Alasannya sudah dijelaskan pada soal no. 9 di bagian Kendala. Namun, cara pengerjaannya sama. Selain itu, kami juga jadi tidak tahu bahwa password yang benar adalah **nakano**. Kami sempat mengira bahwa passwordnya adalah judul dari animenya, **gotoubunnohanayome**.
