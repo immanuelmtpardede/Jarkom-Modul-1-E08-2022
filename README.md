@@ -44,10 +44,36 @@ Di sebuah planet bernama Viltrumite, terdapat Kementerian Komunikasi dan Informa
 ### Soal
 Telusuri aliran paket dalam file .pcap yang diberikan, cari informasi berguna berupa percakapan antara dua mahasiswa terkait tindakan kecurangan pada kegiatan praktikum. Percakapan tersebut dilaporkan menggunakan protokol jaringan dengan tingkat keandalan yang tinggi dalam pertukaran datanya sehingga kalian perlu menerapkan filter dengan protokol yang tersebut.
 ### Jawaban
+Hal yang pertama kali dilakukan adalah membuka file resource soal8-10.pcapng yang sudah didownload. Kemudian, pada Wireshark, dilakukan penelusuran percakapan sesuai yang diminta pada soal dengan cara klik kanan pada paket yang berada di baris no. 1 dan memilih **Follow** ke **TCP Stream** seperti yang ditunjukkan oleh gambar di bawah.
+
+<img src="https://github.com/immanuelmtpardede/Jarkom-Modul-1-E08-2022/blob/main/img/8.1.png" width=50%>
+
+Setelah itu, akan muncul jendela Follow TCP Stream. Pada jendela tersebut, di bagian kanan bawah, terdapat input stream yang nilainya bisa kita ubah menggunakan tombol panah atas dan bawah yang tersedia.
+
+<img src="https://github.com/immanuelmtpardede/Jarkom-Modul-1-E08-2022/blob/main/img/8.2.png" width=50%>
+
+Dengan mengeklik tombol panah atas tersebut terus-menerus sambil mengamati data yang ditampilkan di situ, kita mendapatkan percakapan yang kita cari. Terdapat 3 percakapan dan 2 link.
+
+<img src="https://github.com/immanuelmtpardede/Jarkom-Modul-1-E08-2022/blob/main/img/8.3.png" width=30%><img src="https://github.com/immanuelmtpardede/Jarkom-Modul-1-E08-2022/blob/main/img/8.4.png" width=30%><img src="https://github.com/immanuelmtpardede/Jarkom-Modul-1-E08-2022/blob/main/img/8.5.png" width=30%><img src="https://github.com/immanuelmtpardede/Jarkom-Modul-1-E08-2022/blob/main/img/8.6.png" width=30%><img src="https://github.com/immanuelmtpardede/Jarkom-Modul-1-E08-2022/blob/main/img/8.7.png" width=30%>
+
 ## No. 9
 ### Soal
 Terdapat laporan adanya pertukaran file yang dilakukan oleh kedua mahasiswa dalam percakapan yang diperoleh, carilah file yang dimaksud! Untuk memudahkan laporan kepada atasan, beri nama file yang ditemukan dengan format [nama_kelompok].des3 dan simpan output file dengan nama “flag.txt”.
 ### Jawaban
+Berdasarkan transkrip percakapan yang pertama, kita tahu bahwa file yang dimaksud berada pada port 9002. Oleh karena itu, pada Wireshark, di kolom display filter, kita tulis perintah `tcp.port == 9002` untuk menampilkan semua paket dengan protokol TCP yang menuju ke atau berasal dari port 9002. Setelah itu, klik kanan pada paket yang berada di baris no. 1 dan memilih **Follow** ke **TCP Stream** seperti yang ditunjukkan oleh gambar di bawah.
+
+<img src="https://github.com/immanuelmtpardede/Jarkom-Modul-1-E08-2022/blob/main/img/9.1.png" width=50%>
+
+Setelah itu, di kolom **show data as**, dipilih **Raw**.
+
+<img src="https://github.com/immanuelmtpardede/Jarkom-Modul-1-E08-2022/blob/main/img/9.2.png" width=50%>
+
+Kemudian, data tersebut di-save as dengan nama E08.des3.
+
+<img src="https://github.com/immanuelmtpardede/Jarkom-Modul-1-E08-2022/blob/main/img/9.3.png" width=100%>
+
+**Kendala:** Pada pengerjaan di hari-H praktikum, kami tidak mengubah **show datas as** menjadi **Raw**. Kami membiarkan **show data as** tetap **ASCII**. Hal ini membuat kami tidak mendapatkan hasil yang benar pada pengerjaan soal berikutnya.
+
 ## No. 10
 ### Soal
 Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di atas!
