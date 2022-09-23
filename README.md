@@ -12,11 +12,47 @@ Laporan Resmi Praktikum I Jaringan Komputer oleh Kelompok E08
 ## No. 1
 ### Soal
 Sebutkan web server yang digunakan pada "monta.if.its.ac.id"!
-### Jawaban
+### Jawaban 
+1. Pertama, kita harus membuka file pcapng untuk soal nomor 1-2. Lalu setelah terbuka di wireshark, masukkan display filter http.
+
+![Nomor 1 1](https://user-images.githubusercontent.com/100200062/192067109-75a2e81c-5aca-4e95-afb7-00d9b7caa7fc.png)
+
+2. Lalu klik kanan pada internet protocol, pilih follow, dan pilih tcp stream. 
+
+![Nomor 1 2](https://user-images.githubusercontent.com/100200062/192067120-aa8db2ae-2438-4df7-88d5-dcd6809388f4.png)
+
+3. Setelah itu, bisa kita lihat bahwa web server yang digunakan pada website "monta.if.its.ac.id" adalah "nginx".
+
+![Nomor 1 3](https://user-images.githubusercontent.com/100200062/192068036-50a52777-b18f-4d35-92f3-5ab808844168.png)
+
 ## No. 2
 ### Soal
 Ishaq sedang bingung mencari topik TA untuk semester ini, lalu ia datang ke website monta dan menemukan detail topik pada website “monta.if.its.ac.id”, judul TA apa yang dibuka oleh ishaq?
 ### Jawaban
+1. Pertama, kita harus membuka file pcapng untuk soal nomor 1-2. Lalu setelah terbuka di wireshark, masukkan display filter http.
+
+![Nomor 2 1](https://user-images.githubusercontent.com/100200062/192066975-a3d5afce-3c90-4402-a8e4-443e19953090.png)
+
+2. Lalu cari **detail topik** sesuai dengan yang diminta oleh soal pada website "monta.if.its.ac.id"
+
+![Nomor 2 2](https://user-images.githubusercontent.com/100200062/192067086-a8ea3b58-da95-46ed-b54b-d05948280650.png)
+
+3. Bisa dilihat bahwa nomor atau nama file dari detail topiknya adalah "194". Untuk melihat judul apa yang ada di dalam file tersebut, maka kita harus mendownload atau export file tersebut. Maka, pilih "Export Object" lalu "HTTP"
+
+![Nomor 2 3](https://user-images.githubusercontent.com/100200062/192067422-72964f67-2897-4945-865f-b954356701bc.png)
+
+4. Setelah itu, pilih file dengan nama "194" sesuai dengan detail topik yang telah dicari sebelumnya, lalu klik save. 
+
+![Nomor 2 4](https://user-images.githubusercontent.com/100200062/192067746-9b7dc0e4-759e-47aa-8ccc-669e82800036.png)
+
+5. Setelah file ter-save, buka file tersebut untuk melihat isinya. 
+
+![Nomor 2 5](https://user-images.githubusercontent.com/100200062/192067784-7fcf8889-8451-429b-aa2a-197ae16a5e5e.png)
+
+6. Maka bisa dilihat, bahwa judul TA yang dilihat Ishaq pada detail topik adalah "Evaluasi untuk Kerja User Space Filesystem(FUSE)"
+
+![Nomor 2 6](https://user-images.githubusercontent.com/100200062/192067845-d9eb4000-0cb3-4bff-bc78-5faa714649ff.png)
+
 ## No. 3
 ### Soal
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 80!
@@ -33,10 +69,20 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!
 ### Soal
 Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id!
 ### Jawaban
+
 ## No. 7
 ### Soal
 Filter sehingga wireshark hanya mengambil paket yang berasal dari IP kalian!
 ### Jawaban
+1. Buka command prompt, lalu ketik "ipconfig" untuk mendapatkan IP Address kita.
+
+![Nomor 7 1](https://user-images.githubusercontent.com/100200062/192068267-164691f2-13d5-40d0-aa60-8b00900e71a3.png)
+
+2. Lalu menggunakan capture filter pada Wireshark, masukkan filter "src host [IP Address]". Maka akan terlihat paket-paket yang ada pada IP kita. 
+
+![Nomor 7 2](https://user-images.githubusercontent.com/100200062/192068320-dd1a58b8-3361-42e3-85c9-0d5b1b1c4608.png)
+
+
 Untuk soal 8-10, silahkan baca cerita di bawah ini!
 
 Di sebuah planet bernama Viltrumite, terdapat Kementerian Komunikasi dan Informatika yang baru saja menetapkan kebijakan baru. Dalam kebijakan baru tersebut, pemerintah dapat mengakses data pribadi masyarakat secara bebas jika memang dibutuhkan, baik dengan maupun tanpa persetujuan pihak yang bersangkutan. Sebagai mahasiswa yang sedang melaksanakan program magang di kementerian tersebut, kalian mendapat tugas berupa penyadapan percakapan mahasiswa yang diduga melakukan tindak kecurangan dalam kegiatan Praktikum Komunikasi Data dan Jaringan Komputer 2022. Selain itu, terdapat sebuah password rahasia (flag) yang diduga merupakan milik sebuah organisasi bawah tanah yang selama ini tidak sejalan dengan pemerintahan Planet Viltrumite. Tunggu apa lagi, segera kerjakan tugas magang tersebut agar kalian bisa mendapatkan pujian serta kenaikan jabatan di kementerian tersebut!
