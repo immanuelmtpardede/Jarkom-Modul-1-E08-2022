@@ -57,11 +57,16 @@ Ishaq sedang bingung mencari topik TA untuk semester ini, lalu ia datang ke webs
 ### Soal
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 80!
 ### Jawaban
-> Langkah Pertama yaitu mendownload resource yang ada di drive soal-shift modul 1 (soal 3-6.pcapng)
+1. Langkah Pertama yaitu mendownload resource yang ada di drive soal-shift modul 1 (soal 3-6.pcapng)
 
-> Langkah Selanjutnya yaitu masuk ke dalam file yang sudah kita download dengan menggunakan wireshark
+![Nomor 3 langkah 1][]
 
-> Langkah terakhir yaitu tulis ke display portnya (***tcp.dstport == 80***) agar menampilkan paket yang ***menuju*** ke port 80
+2. Langkah Selanjutnya yaitu masuk ke dalam file yang sudah kita download dengan menggunakan wireshark
+![Nomor 3 langkah 2][]
+
+3. Langkah terakhir yaitu tulis ke display portnya (***tcp.dstport == 80***) agar menampilkan paket yang ***menuju*** ke port 80
+
+![Nomor 3 langkah 3][]
 ## No. 4
 ### Soal
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 21!
@@ -70,6 +75,8 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 21!
 > Langkah pertama sama kayak soal sebelumnya
 
 > Setelah masuk ke dala wiresharknya, kita tulis ke display portnya (***tcp.srcport == 21***) agar menampilkan paket yang ***berasal*** dari port 21
+
+![Nomor 4][]
 ## No. 5
 ### Soal
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!
@@ -77,14 +84,16 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!
 > Langkah pertama sama kayak soal sebelumnya
 
 > Setelah masuk ke dala wiresharknya, kita tulis ke display portnya (***tcp.srcport == 443***) agar menampilkan paket yang ***berasal*** dari port 443
+
+![Nomor 5][]
 ## No. 6
 ### Soal
 Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id!
-
+### Jawaban
 > Langkah pertama sama kayak soal sebelumnya
 
 > Setelah masuk ke dala wiresharknya, kita tulis ke display portnya (***http contains == "lipi.go.id"***) agar menampilkan paket yang ***menuju*** lipi.go.id
-### Jawaban
+![Nomor 6][]
 
 ## No. 7
 ### Soal
