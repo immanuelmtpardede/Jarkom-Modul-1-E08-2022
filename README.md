@@ -93,6 +93,7 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id!
 > Langkah pertama sama kayak soal sebelumnya
 
 > Setelah masuk ke dala wiresharknya, kita tulis ke display portnya (***http contains == "lipi.go.id"***) agar menampilkan paket yang ***menuju*** lipi.go.id
+
 ![Nomor 6][]
 
 ## No. 7
